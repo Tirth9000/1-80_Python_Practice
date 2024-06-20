@@ -8,7 +8,6 @@
 # Use list comprehension in your function.
 
 def difference(list_a, list_b):
-    
     not_in_list_b = [number for number in list_a if number not in list_b]
     not_in_list_a = [number for number in list_b if number not in list_a]
 
