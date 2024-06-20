@@ -8,9 +8,7 @@
 # it should return ‘Python’.
 
 def add_hash(string):
-    string_hash = ''
-    for word in string:
-        string_hash += word + '#'
+    string_hash = "#".join(string)
     return string_hash
 
 def add_underscore(string_hash):

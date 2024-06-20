@@ -6,7 +6,6 @@ def all_the_same(str_li_tuple):
     string_list = []
     if type(str_li_tuple) == str:
         string_list = str_li_tuple.split(" ")
-    
     else:
         string_list = list(str_li_tuple)
 

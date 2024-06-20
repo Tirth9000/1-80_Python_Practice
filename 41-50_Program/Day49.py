@@ -4,26 +4,20 @@
 # For example ‘love life’ should return as ['e,f,i,l,o,v'].
 
 def sort_word(string):
-    seperated_string = string.split()
-    single_string = ''
+    seperated_string = string.replace(" ", "")
     non_repeat = []
-
-    for words in seperated_string:
-        for letter in words:
-            if letter in non_repeat:
-                continue
-            else:
-                non_repeat.append(letter)
+    
+    for letter in seperated_string:
+        if letter not in non_repeat:
+            non_repeat.append(letter)
 
     non_repeat.sort()
 
-    for letter in non_repeat:
-        single_string += letter
+    single_string = "".join(non_repeat)
+    print(single_string)
     
     comma_string = ','.join(letter for letter in single_string)
 
     return [comma_string]
         
-        
-
 print(sort_word('love life'))

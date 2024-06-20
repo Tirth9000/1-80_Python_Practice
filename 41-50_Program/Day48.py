@@ -7,8 +7,7 @@ def read_backwards(string):
     string_list = string.split(' ')
     reversed_string = ''
     
-    for word in range(len(string_list)-1, -1, -1):
-        reversed_string += string_list[word] + ' '
+    reversed_string = " ".join(string_list[::-1])
         
     return reversed_string
 

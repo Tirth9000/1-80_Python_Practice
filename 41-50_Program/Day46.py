@@ -7,4 +7,4 @@ def nested_lists(*args):
     nested_list = list(args)
     return nested_list
 
-print(nested_lists( [1, 2, 3, 5], [1, 2, 3, 4], [1, 3, 4, 5]))
+print(nested_lists([1, 2, 3, 5], [1, 2, 3, 4], [1, 3, 4, 5]))
